@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test_webView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Vgy-gv-rUV">
+                                <rect key="frame" x="0.0" y="650" width="375" height="17"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBp-hL-SSd">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="17"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="画面１"/>
+                                        <connections>
+                                            <segue destination="oyn-mY-cj1" kind="presentation" id="toN-dh-CxO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDv-MD-A1o">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="17"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="画面２"/>
+                                        <connections>
+                                            <segue destination="V9G-kb-4JJ" kind="presentation" id="eoY-83-GXS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41b-Oe-g3m">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="17"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="設定"/>
+                                        <connections>
+                                            <segue destination="naX-7Z-FpQ" kind="presentation" id="koh-ab-n00"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vgy-gv-rUV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Sts-ag-SUw"/>
+                            <constraint firstItem="Vgy-gv-rUV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="630" id="iTT-nX-Y9K"/>
+                            <constraint firstItem="Vgy-gv-rUV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="u25-7q-qsq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vgy-gv-rUV" secondAttribute="trailing" id="v9J-lI-P86"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-551" y="15"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="gFK-Wy-lxB">
+            <objects>
+                <viewController id="oyn-mY-cj1" customClass="ViewController2" customModule="test_webView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0lo-VM-150">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGx-rl-CvI">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="画面１" id="qZZ-LG-PYO">
+                                        <barButtonItem key="leftBarButtonItem" title="戻る" id="VVS-rf-Fvo">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="presentation" id="iSC-7w-rRv"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qff-QG-d26">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TaS-FL-Roi" firstAttribute="bottom" secondItem="qff-QG-d26" secondAttribute="bottom" id="7Sz-Dp-T8e"/>
+                            <constraint firstItem="TaS-FL-Roi" firstAttribute="trailing" secondItem="qff-QG-d26" secondAttribute="trailing" id="ID8-t4-2mm"/>
+                            <constraint firstItem="qff-QG-d26" firstAttribute="top" secondItem="LGx-rl-CvI" secondAttribute="bottom" id="JW5-iu-hJz"/>
+                            <constraint firstItem="LGx-rl-CvI" firstAttribute="trailing" secondItem="TaS-FL-Roi" secondAttribute="trailing" id="Uom-XN-hHj"/>
+                            <constraint firstItem="LGx-rl-CvI" firstAttribute="leading" secondItem="TaS-FL-Roi" secondAttribute="leading" id="XTP-0b-XMm"/>
+                            <constraint firstItem="LGx-rl-CvI" firstAttribute="top" secondItem="TaS-FL-Roi" secondAttribute="top" id="fwD-W2-mjF"/>
+                            <constraint firstItem="qff-QG-d26" firstAttribute="leading" secondItem="TaS-FL-Roi" secondAttribute="leading" id="o7B-pf-w6Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TaS-FL-Roi"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="qff-QG-d26" id="aCD-Lu-f9D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQi-Lo-ivh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549.60000000000002" y="14.842578710644679"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="Fz7-JK-Ybg">
+            <objects>
+                <viewController id="V9G-kb-4JJ" customClass="ViewController3" customModule="test_webView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mIV-HF-fuK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7QS-Es-G2k">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="画面２" id="3Lw-ge-aNU">
+                                        <barButtonItem key="leftBarButtonItem" title="戻る" id="G2Y-Ml-MTs">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="presentation" id="ntm-Wz-hQZ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVm-Uo-PmL">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pVm-Uo-PmL" firstAttribute="trailing" secondItem="38X-J3-TKz" secondAttribute="trailing" id="3zW-b5-3vN"/>
+                            <constraint firstItem="38X-J3-TKz" firstAttribute="bottom" secondItem="pVm-Uo-PmL" secondAttribute="bottom" id="MgT-9y-KXr"/>
+                            <constraint firstItem="pVm-Uo-PmL" firstAttribute="top" secondItem="mIV-HF-fuK" secondAttribute="top" constant="64" id="kxN-gl-l5g"/>
+                            <constraint firstItem="pVm-Uo-PmL" firstAttribute="leading" secondItem="38X-J3-TKz" secondAttribute="leading" id="txF-SW-RbG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="38X-J3-TKz"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView2" destination="pVm-Uo-PmL" id="Etn-OA-jXr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nlu-Ug-Zl1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-551.20000000000005" y="997.15142428785612"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="Bkw-0I-j56">
+            <objects>
+                <viewController id="naX-7Z-FpQ" customClass="ViewController4" customModule="test_webView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mE6-Me-dCD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WxK-TC-lsC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="設定" id="0Uf-eL-tNy">
+                                        <barButtonItem key="leftBarButtonItem" title="戻る" id="SQ7-cM-NEZ">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="presentation" id="6Om-MS-iR5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Jnd-SA-IUB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cjf-gf-O1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="551" y="997"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="iSC-7w-rRv"/>
+    </inferredMetricsTieBreakers>
+</document>
